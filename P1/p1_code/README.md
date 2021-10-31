@@ -1,5 +1,5 @@
-# nodeExpressSqliteEJS_2
-A simple demo application on how to combine node + express + sqlite + EJS
+# Code for Project 1
+A simple implementation of CRUD application combining node + express + sqlite + EJS
 
 
 ## Installation

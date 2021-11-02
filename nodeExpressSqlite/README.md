@@ -2,14 +2,7 @@
 A simple implementation of CRUD application combining node + express + sqlite + EJS
 
 
-## Installation
-1) Clone the repository
-2) `npm install`
-3) `npm start`
-
-
-
-
+## Information about project 1
 - What is the project
   Node.js+express+sqlite CRUD Application for HostResponseTime, District, RoomType and Review table
   
@@ -26,4 +19,4 @@ A simple implementation of CRUD application combining node + express + sqlite + 
 3) `npm start`
 
 * You can also add your database designs in a folder of the repository, and link to them on the README
-
+https://github.com/zejunliu-neu/cs5200database/tree/master/P1

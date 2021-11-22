@@ -1,0 +1,27 @@
+<h2>Reference</h2>
+
+<form action=" <%= '/references/' + ref._id + '/edit' %>" method="POST">
+
+  <div>
+    <label class="form-label">City ID:<input class="form-control" type="text" name="_id" disabled value="<%= ref._id %>" disabled/></label>
+  </div>
+  <div>
+    <label class="form-label">City:<input class="form-control" type="text" name="city" value="<%= ref.city %>"/></label>
+  </div>
+
+  <div>
+    <label class="form-label">Loc:<input class="form-control" type="text" name="loc" value="<%= ref.loc %>"/></label>
+  </div>
+
+  <div>
+    <label class="form-label">Pop:<input class="form-control" type="text" name="pop" value="<%= ref.pop %>"/></label>
+  </div>
+
+  <div>
+    <label class="form-label">State:<input class="form-control" type="text" name="state" value="<%= ref.state %>"/>
+    </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update</button>
+  <a class="btn btn-danger" href="<%= '/references/' + ref._id + '/delete' %>">Delete</a>
+</form>

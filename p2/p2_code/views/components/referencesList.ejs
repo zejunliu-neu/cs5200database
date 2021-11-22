@@ -1,0 +1,29 @@
+<h2>Cities</h2>
+<div class="row g-3">
+  <% for (let ref of references) { %>
+
+    <div class="col-4">
+      <div class="card p-1">
+        <h5 class="card-title"><%= ref._id %></h5>
+        <div class="card-text">
+          <div>City: <%= ref.city %></div>
+          <div>State: <%= ref.state %></div>
+          <div>Pop: <%= ref.pop %></div>
+          <div>Loc: <%= ref.loc %></div>
+          <div>
+            <a class="btn btn-outline-primary" href="<%= '/references/' + ref._id + '/edit' %>">Edit</a>
+            <a class="btn btn-outline-danger" href="<%= '/references/' + ref._id + '/delete' %>">Delete</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  <% } %>
+
+ <%- include("./pagination.ejs", { currentPage, lastPage }) %>
+
+</div>

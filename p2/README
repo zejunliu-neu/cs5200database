@@ -1,0 +1,24 @@
+1.to create db and collection in mongodb, you can either run:
+mongoimport --db p2 --collection city < city.json
+
+or using the dump file, create a dump file, run(you can skip this part since the dump file is there):
+mongoexport -d p2 -c city -o city.dump
+create db and collection in mongodb and run:
+mongoimport -h localhost:27017 -d p2 -c city --file city.dump
+
+2.to initialize node.js, run:
+npm init
+
+3. to run queries, you need to run it individually.
+
+4. to run project:
+    1) Clone the repo
+    2) Install the dependencies
+    ```
+    npm install
+    ```
+    3) Start the server
+    ```
+    npm start
+    ```
+    4) Point your browser to http://locahost:3000

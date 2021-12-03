@@ -1,6 +1,6 @@
-# nodeExpressMongoJade
+# nodeExpressRedisCRUD
 
-A basic example showcasing an Mongo Database with server side rendering
+A basic Node application showcasing an Redis Database with CRUD
 
 ## Import data to redis
 redis-cli -h localhost -p 6379 < ./movies.redis
@@ -9,11 +9,9 @@ redis-cli -h localhost -p 6379 < ./movies.redis
 Clone the repository, then
 
 ```
-cd nodeExpressMongoJade
-
 npm install
 npm run start
 ```
 
-And your app should be running on http://localhost:3000 . It assumes that you have `mongod` running on `mongodb://localhost:27017` or that you have the MONGO_URL environment variable set to the database you want to use
-# nodeExpressRedisJade
+And your app should be running on http://localhost:3000 . 
+# nodeExpressRedisCRUD
